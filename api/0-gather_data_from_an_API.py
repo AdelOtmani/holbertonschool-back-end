@@ -13,19 +13,19 @@ def api():
     """
     url = requests.get("http://jsonplaceholder.typicode.com/users")
     for users in url.json():
-        if users.get('id') == int(argv[1]):
-            EMPLOYEE_NAME = (users.get('name'))
+        if users.get("id") == int(argv[1]):
+            EMPLOYEE_NAME = (users.get("name"))
             break
     TOTAL_NUM_OF_TASKS = 0
     NUMBER_OF_DONE_TASKS = 0
     TASK_TITLE = []
     TODO = requests.get("http://jsonplaceholder.typicode.com/todos")
     for TODOS in TODO.json():
-        if TODOS.get('userId') == int(argv[1]):
+        if TODOS.get("userId") == int(argv[1]):
             TOTAL_NUM_OF_TASKS += 1
-            if TODO.get('completed') is True:
+            if TODO.get("completed") is True:
                 NUMBER_OF_DONE_TASKS += 1
-                TASK_TITLE.append(TODO.get('title'))
+                TASK_TITLE.append(TODO.get("title"))
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
                                                           NUMBER_OF_DONE_TASKS,
                                                           TOTAL_NUM_OF_TASKS))
