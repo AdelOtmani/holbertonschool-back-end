@@ -3,10 +3,10 @@
 Using what you did in the task #0,
 extend your Python script to export data in the CSV format
 """
-import requests
-from requests import get
-from sys import argv
 import csv
+import requests
+from sys
+
 
 
 if __name__ == "__main__":
