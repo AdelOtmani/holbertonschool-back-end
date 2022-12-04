@@ -24,10 +24,8 @@ if __name__ == "__main__":
                 TAB["task"] = TODOS["title"]
                 TAB["completed"] = TODOS["completed"]
                 tab.append(TAB)
-
-    
-    dict_f[user["id"]] = tab
-    
+        
+        dict_f[user["id"]] = tab
 
     with open("todo_all_employees.json", "w", encoding="utf-8") as f:
         json_f = json.dumps(dict_f)
