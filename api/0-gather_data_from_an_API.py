@@ -32,5 +32,5 @@ def api():
     for TASK in TASK_TITLE:
         print("\t {}".format(TASK))
  
- if __name__ == "__main__":
+if __name__ == "__main__":
     api()
