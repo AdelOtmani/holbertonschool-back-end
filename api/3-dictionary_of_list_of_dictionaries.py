@@ -13,10 +13,10 @@ if __name__ == "__main__":
     TODO = requests.get("http://jsonplaceholder.typicode.com/todos")
     Data = url.json()
     Data2 = TODO.json()
-    tab = []
     dict_f = {}
 
     for users in Data:
+        tab = []
         for TODOS in Data2:
             if users.get("id") == TODOS["userId"]:
                 TAB = {}
