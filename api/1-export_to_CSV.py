@@ -15,7 +15,7 @@ if __name__ == "__main__":
     Data2 = TODO.json()
     for users in Data:
         if users.get("id") == int(argv[1]):
-            EMPLOYEE_NAME = (users["name"])
+            EMPLOYEE_NAME = (users["username"])
     with open(argv[1] + ".csv", "w", encoding="utf-8", newline="") as f:
         W = csv.writer(f, quoting=csv.QUOTE_ALL)
         for TODOS in Data2:
