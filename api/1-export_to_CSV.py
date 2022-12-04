@@ -28,4 +28,3 @@ if __name__ == "__main__":
                 TAB.append(TODOS["completed"])
                 TAB.append(TODOS["title"])
                 W.writerow(TAB)
-    f.close()
