@@ -20,17 +20,17 @@ if __name__ == "__main__":
             ID = (users["id"])
 
         for TODOS in Data2:
-            tab=[]
+            tab = []
             TAB = {}
             if TODOS["userId"] == int(argv[1]):
                 TAB["username"] = EMPLOYEE_NAME
                 TAB["task"] = TODOS["title"]
                 TAB["completed"] = TODOS["completed"]
                 tab.append(TAB)
-        
+
         dict_f = {}
         dict_f[ID] = tab
         json_f = json.dumb(dict_f)
 
-    with open(argv[1] + ".csv", "w", encoding="utf-8", newline="") as f:
+    with open(argv[1] + ".json", "w", encoding="utf-8") as f:
         f.write(json_f)
