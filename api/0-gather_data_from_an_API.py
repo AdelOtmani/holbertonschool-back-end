@@ -31,6 +31,6 @@ def api():
                                                           TOTAL_NUM_OF_TASKS))
     for TASK in TASK_TITLE:
         print("\t {}".format(TASK))
- 
+
 if __name__ == "__main__":
     api()
