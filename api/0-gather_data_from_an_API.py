@@ -19,7 +19,7 @@ if __name__ == "__main__":
     for users in Data:
         if users.get("id") == int(argv[1]):
             EMPLOYEE_NAME = (users.get("name"))
-  
+
     for TODOS in Data2:
         if TODOS.get("userId") == int(argv[1]):
             TOTAL_NUM_OF_TASKS += 1
@@ -31,5 +31,3 @@ if __name__ == "__main__":
                                                           TOTAL_NUM_OF_TASKS))
     for i in TASK_TITLE:
         print("\t {}".format(TASK))
-
-
