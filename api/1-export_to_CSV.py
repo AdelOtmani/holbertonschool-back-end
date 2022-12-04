@@ -5,11 +5,10 @@ extend your Python script to export data in the CSV format
 """
 import csv
 import requests
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
-
     url = requests.get("http://jsonplaceholder.typicode.com/users")
     TODO = requests.get("http://jsonplaceholder.typicode.com/todos")
     Data = url.json()
@@ -22,7 +21,7 @@ if __name__ == "__main__":
         for TODOS in Data2:
             TAB = []
             if TODOS["userId"] == int(argv[1]):
-                TAB.append(TODOS["userID"])
+                TAB.append(TODOS["userId"])
                 TAB.append(EMPLOYEE_NAME)
                 TAB.append(TODOS["completed"])
                 TAB.append(TODOS["title"])
