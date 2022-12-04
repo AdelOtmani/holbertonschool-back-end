@@ -20,12 +20,12 @@ if __name__ == "__main__":
         for TODOS in Data2:
             if users.get("id") == TODOS["userId"]:
                 TAB = {}
-                TAB["username"] = user["username"]
+                TAB["username"] = users["username"]
                 TAB["task"] = TODOS["title"]
                 TAB["completed"] = TODOS["completed"]
                 tab.append(TAB)
 
-        dict_f[user["id"]] = tab
+        dict_f[users["id"]] = tab
 
     with open("todo_all_employees.json", "w", encoding="utf-8") as f:
         json_f = json.dumps(dict_f)
