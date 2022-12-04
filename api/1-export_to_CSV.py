@@ -5,8 +5,7 @@ extend your Python script to export data in the CSV format
 """
 import csv
 import requests
-from sys
-
+import sys
 
 
 if __name__ == "__main__":
