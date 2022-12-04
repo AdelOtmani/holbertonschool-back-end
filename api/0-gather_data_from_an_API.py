@@ -24,9 +24,7 @@ if __name__ == "__main__":
     for TODOS in Data2:
         if TODOS.get("userId") == int(argv[1]):
             TOTAL_NUM_OF_TASKS += 1
-            print("ici")
             if TODOS.get("completed") is True:
-                print("la")
                 NUMBER_OF_DONE_TASKS += 1
                 TASK_TITLE.append(TODOS.get("title"))
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
