@@ -13,6 +13,7 @@ if __name__ == "__main__":
     TODO = requests.get("http://jsonplaceholder.typicode.com/todos")
     Data = url.json()
     Data2 = TODO.json()
+    tab = []
 
     for users in Data:
         if users.get("id") == int(argv[1]):
@@ -20,7 +21,6 @@ if __name__ == "__main__":
             ID = (users["id"])
 
         for TODOS in Data2:
-            tab = []
             TAB = {}
             if TODOS["userId"] == int(argv[1]):
                 TAB["username"] = EMPLOYEE_NAME
