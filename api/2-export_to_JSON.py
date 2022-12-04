@@ -22,11 +22,11 @@ if __name__ == "__main__":
 
     for TODOS in Data2:
         TAB = {}
-            if TODOS["userId"] == int(argv[1]):
-                TAB["username"] = EMPLOYEE_uNAME
-                TAB["task"] = TODOS["title"]
-                TAB["completed"] = TODOS["completed"]
-                tab.append(TAB)
+        if TODOS["userId"] == int(argv[1]):
+            TAB["username"] = EMPLOYEE_uNAME
+            TAB["task"] = TODOS["title"]
+            TAB["completed"] = TODOS["completed"]
+            tab.append(TAB)
 
     dict_f = {}
     dict_f[ID] = tab
