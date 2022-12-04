@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
         dict_f = {}
         dict_f[ID] = tab
-        json_f = json.dumb(dict_f)
+        json_f = json.dumps(dict_f)
 
     with open(argv[1] + ".json", "w", encoding="utf-8") as f:
         f.write(json_f)
